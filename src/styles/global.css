@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0c1014;
+  --color-primary-hover: #21262c;
+  --color-secondary: #31363b;
+  --aspect-perso: 4/5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}

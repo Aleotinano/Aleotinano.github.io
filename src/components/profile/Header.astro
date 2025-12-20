@@ -1,0 +1,76 @@
+---
+import Historie from "./Historie.astro";
+---
+
+<header
+  class="flex flex-row items-center justify-center max-w-2xl w-full pb-6 gap-5 mt-5 h-fit"
+>
+  <section
+    id="profile-container"
+    class="relative transition hover:scale-95 cursor-pointer flex flex-col"
+  >
+    <button
+      id="profile-note"
+      class="absolute -top-5 left-3
+        text-xs text-gray-300
+         bg-primary-hover rounded-xl
+         shadow-lg
+         cursor-pointer
+         h-9 w-fit
+         text-wrap
+         z-10
+         p-2"
+    >
+      Disponible para trabajar
+      <span
+        class="absolute -bottom-1 left-3 size-3 bg-primary-hover rounded-full"
+      ></span>
+
+      <span
+        class="absolute -bottom-3.5 left-6 size-1.5 bg-primary-hover rounded-full"
+      ></span>
+    </button>
+    <Historie
+      size="size-42"
+      src="/alePhoto.jpg "
+      id="profile-picture"
+      alt="Ale photo"
+      title="Ale photo"
+      label="hidden"
+    />
+  </section>
+  <section id="profile-info" class="flex flex-col gap-1">
+    <h1 class="text-2xl font-bold">Alejandro Otiñano</h1>
+    <h2 class="text-base text-neutral-200">Desarrollador Frontend</h2>
+
+    <ul class="flex gap-5 text-sm mt-3 text-nowrap font-medium">
+      <li class="flex items-center gap-1 text-center">
+        <span class="font-semibold text-white">+7</span>
+        <span class="text-neutral-300">proyectos</span>
+      </li>
+
+      <li class="flex items-center gap-1 text-center">
+        <span class="font-semibold text-white">2</span>
+        <span class="text-neutral-300">años codeando</span>
+      </li>
+
+      <li class="flex items-center gap-1 text-center">
+        <span class="font-semibold text-white">1 </span>
+        <span class="text-neutral-300"> año de experiencia laboral </span>
+      </li>
+    </ul>
+    <ul
+      id="profile-description"
+      class="flex flex-col gap-1 justify-center text-sm mt-3"
+    >
+      <li>♋</li>
+      <li>San juan, Argentina</li>
+      <li class="font-medium max-w-90">
+        <span class="text-red-300"> Diseño </span>
+        y
+        <span class="text-blue-300"> desarrollo </span>
+        de interfaces web modernas, enfocadas en rendimiento y experiencia de usuario.
+      </li>
+    </ul>
+  </section>
+</header>
