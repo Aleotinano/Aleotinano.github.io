@@ -147,10 +147,11 @@ export const GridCardOpen = ({ onClose, projects = [], currentIndex = 0 }) => {
                 </ul>
               </div>
             )}
+            {/* Características */}
             {currentProject.features?.length > 0 && (
               <div>
                 <h3 className="text-base font-bold uppercase  mb-2 text-blue-400">
-                  Features
+                  Características
                 </h3>
                 <ul className="flex flex-col flex-wrap gap-1.5  opacity-80">
                   {currentProject.features.map((feature, i) => (
