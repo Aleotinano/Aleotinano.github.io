@@ -46,7 +46,7 @@ export const StoriesCarousel = ({ children }) => {
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       className="max-s:px-4.5 px-5 overflow-visible  relative w-full max-w-3xl min-h-fit flex justify-center py-10 max-s:py-8"
     >

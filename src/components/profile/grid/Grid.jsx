@@ -29,19 +29,23 @@ export const Grid = ({ activeTab }) => {
         lg:grid-cols-4  
       "
       >
-        {projects.map((item, index) => (
-          <GridCard
-            key={item.id}
-            id={item.id}
-            src={item.src}
-            alt={item.title}
-            title={item.title}
-            activeTab={activeTab}
-            index={index}
-            project={item}
-            openCard={() => openCard(item)}
-          />
-        ))}
+        {projects.map((item, index) =>
+          projects.length > 1 ? (
+            <GridCard
+              key={item.id}
+              id={item.id}
+              src={item.src}
+              alt={item.title}
+              title={item.title}
+              activeTab={activeTab}
+              index={index}
+              project={item}
+              openCard={() => openCard(item)}
+            />
+          ) : (
+            <h1>HOOOOOOOOLAAAAAAAAA</h1>
+          )
+        )}
       </motion.div>
 
       {selectedProject && (
