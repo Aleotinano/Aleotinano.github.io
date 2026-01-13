@@ -54,6 +54,8 @@ export const projects = [
     code: "https://github.com/Aleotinano/aleotinano.github.io",
     gallery: [
       { img: "./portafolio2026/image.png", alt: "Portada-Portafolio-2026" },
+      { img: "./portafolio2026/image1.png", alt: "Image-Portafolio-2026" },
+      { img: "./portafolio2026/image2.png", alt: "Image-Portafolio-2026" },
     ],
   },
 
@@ -242,11 +244,11 @@ export const projects = [
   },
 
   {
-    id: "portafolio-2023",
-    title: "Portafolio 2023",
+    id: "portafolio-2024",
+    title: "Portafolio 2024",
     description: {
       short: "Primer portafolio personal como desarrollador frontend.",
-      full: "Proyecto de portafolio personal donde presento mis primeros trabajos, habilidades y experiencia como desarrollador frontend durante 2023.",
+      full: "Proyecto de portafolio personal donde presento mis primeros trabajos, habilidades y experiencia como desarrollador frontend durante 2024.",
     },
     role: [
       "Frontend Development",
@@ -281,7 +283,7 @@ export const projects = [
     demo: "https://subtle-pony-24f2c8.netlify.app/",
     code: "https://github.com/Aleotinano/Portafolio",
     gallery: [
-      { img: "./portafolio2023/image.png", alt: "Portada-Portafolio-2023" },
+      { img: "./portafolio2024/image.png", alt: "Portada-Portafolio-2024" },
     ],
   },
 
